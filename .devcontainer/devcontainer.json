@@ -1,0 +1,18 @@
+{
+	"name": "starterkit-python-selenium",
+	"dockerComposeFile": "docker-compose.yaml",
+	"service": "devcontainer",
+	"workspaceFolder": "/workspace",
+	"containerEnv": {
+		"PIPENV_VENV_IN_PROJECT": "1"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker",
+				"ms-python.python"
+			]
+		}
+	},
+	"postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}"
+}
